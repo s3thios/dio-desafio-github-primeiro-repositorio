@@ -1,0 +1,112 @@
+Git é um sistema de controle de versão local e distribuído, usado para rastrear mudanças no código.
+
+GitHub é uma plataforma online para hospedar repositórios Git e colaborar com outros devs.
+
+🔧 Fluxo básico:
+git init – cria o repositório
+
+git add – adiciona arquivos ao staging
+
+git commit – salva alterações
+
+git push – envia pro GitHub
+
+git pull – traz mudanças do GitHub
+
+🌿 Branches:
+Permitem criar versões paralelas do código. Ex: git branch, git checkout, git merge.
+
+🛠️ Por que usar?
+Controle de versões
+
+Trabalho em equipe
+
+Histórico de alterações
+
+Backup no GitHub
+
+
+
+🧠 GIT x GITHUB
+Git: Sistema de controle de versões local.
+
+GitHub: Plataforma online para hospedar repositórios Git, colaborar e versionar remotamente.
+
+🔧 CONFIGURAÇÃO INICIAL
+bash
+Copiar
+Editar
+git config --global user.name "Seu Nome"
+git config --global user.email "seu@email.com"
+git config --list  # Verifica config
+🗃️ CRIAÇÃO DE REPOSITÓRIO
+bash
+Copiar
+Editar
+git init                # Inicia repositório Git local
+git clone URL           # Clona repositório remoto
+📦 CICLO BÁSICO DE COMMIT
+bash
+Copiar
+Editar
+git status              # Ver arquivos modificados
+git add arquivo.ext     # Adiciona ao staging
+git add .               # Adiciona tudo
+git commit -m "mensagem"  # Cria commit
+🌲 BRANCHES
+bash
+Copiar
+Editar
+git branch              # Lista branches
+git branch nova-branch  # Cria nova branch
+git checkout nova-branch  # Troca de branch
+git switch main         # Alternativa moderna para checkout
+git merge nome-da-branch  # Mescla branch atual com outra
+🔁 SINCRONIZAÇÃO REMOTA
+bash
+Copiar
+Editar
+git remote add origin URL         # Associa repositório remoto
+git push -u origin main           # Envia branch main
+git push                          # Envia alterações
+git pull                          # Atualiza local com remoto
+🕵️‍♂️ LOGS E HISTÓRICO
+bash
+Copiar
+Editar
+git log                # Log completo
+git log --oneline      # Resumo de commits
+git diff               # Mostra diferenças não comitadas
+🧹 DESCARTAR MUDANÇAS
+bash
+Copiar
+Editar
+git restore arquivo.ext          # Desfaz alterações em arquivo
+git reset --hard HEAD            # Volta ao último commit
+📌 TAGS (Versões)
+bash
+Copiar
+Editar
+git tag v1.0                    # Cria tag
+git push origin v1.0           # Envia tag
+🤝 FLUXO BÁSICO COM GITHUB
+Cria repo no GitHub.
+
+No terminal:
+
+bash
+Copiar
+Editar
+git init
+git remote add origin https://github.com/usuario/repositorio.git
+git add .
+git commit -m "Primeiro commit"
+git push -u origin main
+🔗 LINKS ÚTEIS
+Documentação Git (oficial)
+
+GitHub Docs
+
+Try Git (interativo)
+
+Git Cheat Sheet PDF (GitHub)
